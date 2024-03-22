@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="0"
+        android:text=""
         android:textColor="#E61114"
         android:textSize="40sp" />
 
@@ -54,11 +54,11 @@
             android:layout_height="match_parent">
 
             <Button
+                android:background="@color/material_dynamic_primary80"
                 android:id="@+id/button_resta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FC1ECF27"
                 android:text="RESTA"
                 app:iconTint="#000000" />
 
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#4CAF50"
+                android:background="@color/white"
                 android:backgroundTint="#5B7488"
                 android:foregroundTint="#C30303"
                 android:text="SUMA" />
@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#F83838"
+                android:background="@color/material_dynamic_primary80"
                 android:text="DIVISION" />
 
             <Button
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#E91E63"
+                android:background="@color/white"
                 android:text="MULTIPLICACION"
                 android:textColorHighlight="#2196F3" />
         </TableRow>

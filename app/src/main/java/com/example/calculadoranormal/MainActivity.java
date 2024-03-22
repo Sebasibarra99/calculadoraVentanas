@@ -32,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int resultado = Suma(Integer.parseInt(edit_numeroUno.getText().toString()), Integer.parseInt(edit_numeroDos.getText().toString()));
                 Intent i = new Intent(MainActivity.this,resultadoSuma.class);
-                i.putExtra("Resultado",resultado);
+                Bundle bundle = new Bundle();
+                bundle.putInt("Resultado",resultado);
+                i.putExtras(bundle);
                 startActivity(i);
             }
         });
@@ -45,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int resultado = Resta(Integer.parseInt(edit_numeroUno.getText().toString()), Integer.parseInt(edit_numeroDos.getText().toString()));
                 Intent i = new Intent(MainActivity.this, resultadoSuma.class);
-                i.putExtra("Resultado",resultado);
+                Bundle bundle = new Bundle();
+                bundle.putInt("Resultado",resultado);
+                i.putExtras(bundle);
                 startActivity(i);
             }
         });
@@ -57,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int resultado = Multiplicacion(Integer.parseInt(edit_numeroUno.getText().toString()), Integer.parseInt(edit_numeroDos.getText().toString()));
                 Intent i = new Intent(MainActivity.this, resultadoSuma.class);
-                i.putExtra("Resultado",resultado);
+                Bundle bundle = new Bundle();
+                bundle.putInt("Resultado",resultado);
+                i.putExtras(bundle);
                 startActivity(i);
             }
         });
@@ -69,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int resultado = Division(Integer.parseInt(edit_numeroUno.getText().toString()), Integer.parseInt(edit_numeroDos.getText().toString()));
                 Intent i = new Intent(MainActivity.this, resultadoSuma.class);
-                i.putExtra("Resultado",resultado);
+                Bundle bundle = new Bundle();
+                bundle.putInt("Resultado",resultado);
+                i.putExtras(bundle);
                 startActivity(i);
             }
         });
